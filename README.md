@@ -5,7 +5,7 @@ The project includes the original analytical work (data collection, web scraping
 and an extended engineering layer (pipelines, monitoring systems, Java utilities, and architecture experiments).
 
 <p align="center">
-  <img src="https://media.tenor.com/AkqhcKDjI7sAAAAC/falcon-9-rocket-launch.gif" height="220">
+  <![Falcon 9 landing](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0701EN-SkillsNetwork/api/Images/landing_1.gif)>
 </p>
 
 ---
@@ -142,7 +142,8 @@ This work is for educational purposes only and is not affiliated with SpaceX.
 ---
 
 <p align="center">
-  <img src="https://media.tenor.com/dFJpRJ8PzVYAAAAC/space-x-falcon-landing.gif" height="220">
+  <![Falcon 9 crash](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0701EN-SkillsNetwork/api/Images/crash.gif)
+>
 </p>
 
 <p align="center">

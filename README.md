@@ -1,55 +1,150 @@
-# SpaceX Falcon 9 Data Science Project
+<h1 align="center">SpaceX Falcon 9 Data Science Project</h1>
 
-This repository contains the SpaceX Falcon 9 analysis, visualizations, and machine learning workflow.  
-The project includes the original analytical work (notebooks, data processing, EDA, modeling) and an extended engineering layer (pipelines, monitoring, Java tools).
+This repository contains the complete SpaceX Falcon 9 analysis, visualizations, and machine learning workflow.
+The project includes the original analytical work (data collection, web scraping, wrangling, SQL EDA, visualization, modeling) 
+and an extended engineering layer (pipelines, monitoring systems, Java utilities, and architecture experiments).
 
----
-
-## 📁 Repository Structure
-
-\\\
-spacex_project/          # Main project: notebooks, data, visual assets
-    ├─ notebooks/        # Jupyter notebooks for analysis
-    ├─ data/             # Data directory
-    │   └─ processed/    # CSV and processed datasets
-    └─ images/           # Plots, maps, dashboard screenshots
-
-engineering/             # Engineering extensions (DevOps/MLOps + Java)
-    ├─ pipelines/        # Python pipeline scripts
-    ├─ monitoring/       # Monitoring and run-logging tools
-    └─ java/             # Java-based analysis tools
-        └─ src/
-
-reports/                 # Final reports and presentations
-
-README.md                # Project overview
-requirements.txt         # Python dependencies (optional, added later)
-\\\
+<p align="center">
+  <img src="https://media.tenor.com/AkqhcKDjI7sAAAAC/falcon-9-rocket-launch.gif" height="220">
+</p>
 
 ---
 
-## 🔍 Project Scope
-
-- Exploration of SpaceX Falcon 9 historical data  
-- Data collection, wrangling, visualization, EDA  
-- SQL-based analysis  
-- Folium interactive geospatial maps  
-- Plotly Dash interactive dashboard  
-- Classification model for predicting first stage landing success  
-
----
-
-## ⚙ Engineering Layer (Extended)
-
-- Python mini-pipelines  
-- Run monitoring + logging  
-- Cross-language analysis in Java  
-- Future expansion for database ingestion and automated data refresh  
+# Table of Contents
+- [Project Structure](#project-structure)
+- [Notebooks](#notebooks)
+- [Data Files](#data-files)
+- [Reports](#reports)
+- [Engineering Layer](#engineering-layer)
+- [Environment](#environment)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
 ---
 
-## 📦 Status
+# Project Structure
 
-🔹 Repository structure created  
-🔹 Notebooks and data pending upload  
-🔹 Engineering layer to be added step-by-step  
+spacex_project/
+├── notebooks/ # Jupyter notebooks (API, scraping, EDA, SQL, ML)
+├── reports/ # Presentation (PDF, PPTX)
+├── engineering/ # Extended engineering modules
+│ ├── java/ # Java utilities and integrations
+│ ├── monitoring/ # Monitoring concepts & load-control ideas
+│ └── pipelines/ # Early MLOps/DevOps pipeline drafts
+└── README.md
+
+
+---
+
+# Notebooks
+
+### Data acquisition
+- **[jupyter-labs-spacex-data-collection-api.ipynb](notebooks/jupyter-labs-spacex-data-collection-api.ipynb)**  
+  Collects launch data from the SpaceX REST API.
+
+- **[jupyter-labs-webscraping.ipynb](notebooks/jupyter-labs-webscraping.ipynb)**  
+  Scrapes additional Falcon 9 launch information from Wikipedia.
+
+### Wrangling & preprocessing
+- **[labs-jupyter-spacex-Data wrangling.ipynb](notebooks/labs-jupyter-spacex-Data%20wrangling.ipynb)**  
+  Cleaning and transforming launch datasets.  
+  Feature engineering and categorical encoding.
+
+### SQL-based EDA
+- **[jupyter-labs-eda-sql-coursera_sqllite.ipynb](notebooks/jupyter-labs-eda-sql-coursera_sqllite.ipynb)**  
+  Exploratory analysis using SQL on an SQLite database (`my_data1.db`).
+
+### Visualization EDA
+- **[edadataviz.ipynb](notebooks/edadataviz.ipynb)**  
+  Seaborn/Matplotlib visual analysis of launch patterns.
+
+### Launch site mapping
+- **[lab_jupyter_launch_site_location.ipynb](notebooks/lab_jupyter_launch_site_location.ipynb)**  
+  Folium-powered interactive maps showing launch sites, trajectories, and risk areas.
+
+### Machine learning prediction
+- **[SpaceX_Machine Learning Prediction_Part_5.ipynb](notebooks/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)**  
+  ML workflow:  
+  - Logistic Regression  
+  - SVM  
+  - Decision Tree  
+  - KNN  
+  Includes hyperparameter tuning (GridSearchCV) and confusion matrices.
+
+---
+
+# Data Files
+
+Located in `notebooks/`:
+
+- `dataset_part_1.csv`  
+- `dataset_part_3.csv`  
+- `spacex_web_scraped.csv`  
+- `features_one_hot.csv`  
+- `my_data1.db` — SQLite database used for SQL EDA
+
+Raw data is fetched automatically from IBM Skills Network URLs in the notebooks.
+
+---
+
+# Reports
+
+Located in `reports/`:
+
+- `ds-capstone-template-coursera.pptx` — Coursera-provided template  
+- `spacex_capstone_presentation.pdf` — final submission-ready report (once exported)
+
+---
+
+# Engineering Layer
+
+Additional engineering modules expanding the project beyond the Coursera scope.
+
+### **[engineering/java/](engineering/java/)**  
+Java-based experiments, utilities, data processing prototypes, integration tooling.
+
+### **[engineering/monitoring/](engineering/monitoring/)**  
+System monitoring concepts including:  
+resource load tracking, automated throttling during ML training,  
+early implementations inspired by the “Gorgon System”.
+
+### **[engineering/pipelines/](engineering/pipelines/)**  
+DevOps/MLOps drafts:  
+scheduled data ingestion, ETL ideas, notebook → production transformations,  
+early retraining pipeline concepts.
+
+---
+
+# Environment
+
+Install all dependencies:
+
+pip install -r requirements.txt
+
+
+A full list of packages is stored in **requirements.txt** in the project root.
+
+---
+
+# License
+
+This project is licensed under the **Apache License 2.0**.  
+See the `LICENSE` file for details.
+
+---
+
+# Acknowledgements
+
+Based on the **IBM Data Science Professional Certificate – Capstone Project** (Coursera).  
+SpaceX® is a trademark of Space Exploration Technologies Corp.  
+This work is for educational purposes only and is not affiliated with SpaceX.
+
+---
+
+<p align="center">
+  <img src="https://media.tenor.com/dFJpRJ8PzVYAAAAC/space-x-falcon-landing.gif" height="220">
+</p>
+
+<p align="center">
+  <i>“The goal was simple: predict this outcome.”</i>
+</p>

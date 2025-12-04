@@ -1,26 +1,20 @@
-# SpaceX Falcon 9 Data Science Project
+<h1 align="center">SpaceX Falcon 9 Data Science Project</h1>
 
-This repository contains the full Capstone Project for analyzing and predicting SpaceX Falcon 9 first‑stage landing outcomes.
+This repository contains the complete SpaceX Falcon 9 analysis, visualizations, and machine learning workflow.
+The project includes the original analytical work (data collection, web scraping, wrangling, SQL EDA, visualization, modeling) 
+and an extended engineering layer (pipelines, monitoring systems, Java utilities, and architecture experiments).
 
-It includes:
-- Data collection (API + Web Scraping)
-- Data wrangling & cleaning
-- SQL exploration (SQLite)
-- Exploratory Data Analysis & Visualization
-- Machine Learning prediction models
-- Interactive Folium map
-- Plotly Dash dashboard
-- Engineering layer (DevOps / MLOps extensions)
-- Final presentation materials
+<p align="center">
+  <![Falcon 9 landing](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0701EN-SkillsNetwork/api/Images/landing_1.gif)>
+</p>
 
 ---
 
-## Table of Contents
+# Table of Contents
 - [Project Structure](#project-structure)
 - [Notebooks](#notebooks)
 - [Data Files](#data-files)
-- [Dashboard Screenshot](#dashboard-screenshot)
-- [GIF Visuals](#gif-visuals)
+- [Reports](#reports)
 - [Engineering Layer](#engineering-layer)
 - [Environment](#environment)
 - [License](#license)
@@ -28,123 +22,130 @@ It includes:
 
 ---
 
-## Project Structure
+# Project Structure
 
-```
 spacex_project/
-├── notebooks/
-├── reports/
-├── engineering/
-│   ├── java/
-│   ├── monitoring/
-│   └── pipelines/
-├── images/
+├── notebooks/ # Jupyter notebooks (API, scraping, EDA, SQL, ML)
+├── reports/ # Presentation (PDF, PPTX)
+├── engineering/ # Extended engineering modules
+│ ├── java/ # Java utilities and integrations
+│ ├── monitoring/ # Monitoring concepts & load-control ideas
+│ └── pipelines/ # Early MLOps/DevOps pipeline drafts
 └── README.md
-```
+
 
 ---
 
-## Notebooks
+# Notebooks
 
-All notebooks are available inside  
-**`spacex_project/notebooks/`**
+### Data acquisition
+- **[jupyter-labs-spacex-data-collection-api.ipynb](notebooks/jupyter-labs-spacex-data-collection-api.ipynb)**  
+  Collects launch data from the SpaceX REST API.
 
-### Data Acquisition
-- jupyter-labs-spacex-data-collection-api.ipynb
-- jupyter-labs-webscraping.ipynb
+- **[jupyter-labs-webscraping.ipynb](notebooks/jupyter-labs-webscraping.ipynb)**  
+  Scrapes additional Falcon 9 launch information from Wikipedia.
 
-### Data Wrangling
-- labs-jupyter-spacex-Data wrangling.ipynb
+### Wrangling & preprocessing
+- **[labs-jupyter-spacex-Data wrangling.ipynb](notebooks/labs-jupyter-spacex-Data%20wrangling.ipynb)**  
+  Cleaning and transforming launch datasets.  
+  Feature engineering and categorical encoding.
 
-### SQL EDA
-- jupyter-labs-eda-sql-coursera_sqllite.ipynb
+### SQL-based EDA
+- **[jupyter-labs-eda-sql-coursera_sqllite.ipynb](notebooks/jupyter-labs-eda-sql-coursera_sqllite.ipynb)**  
+  Exploratory analysis using SQL on an SQLite database (`my_data1.db`).
 
 ### Visualization EDA
-- edadataviz.ipynb
+- **[edadataviz.ipynb](notebooks/edadataviz.ipynb)**  
+  Seaborn/Matplotlib visual analysis of launch patterns.
 
-### Launch Site Mapping
-- lab_jupyter_launch_site_location.ipynb
+### Launch site mapping
+- **[lab_jupyter_launch_site_location.ipynb](notebooks/lab_jupyter_launch_site_location.ipynb)**  
+  Folium-powered interactive maps showing launch sites, trajectories, and risk areas.
 
-### Machine Learning Prediction
-- SpaceX_Machine Learning Prediction_Part_5.ipynb
-
----
-
-## Data Files
-
-All data files are inside  
-**`spacex_project/notebooks/`**
-
-- dataset_part_1.csv
-- dataset_part__3.csv
-- spacex_web_scraped.csv
-- features_one_hot.csv
-- my_data1.db
-
-> **Note:** Browsers may open CSV in a tab instead of downloading.  
-> Use *Right‑click → Save link as…* and ensure the file ends with `.csv`.
+### Machine learning prediction
+- **[SpaceX_Machine Learning Prediction_Part_5.ipynb](notebooks/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)**  
+  ML workflow:  
+  - Logistic Regression  
+  - SVM  
+  - Decision Tree  
+  - KNN  
+  Includes hyperparameter tuning (GridSearchCV) and confusion matrices.
 
 ---
 
-## Dashboard Screenshot
+# Data Files
 
-![Dash Screenshot](spacex_project/images/spacex_dash.png)
+Located in `notebooks/`:
 
----
+- `dataset_part_1.csv`  
+- `dataset_part_3.csv`  
+- `spacex_web_scraped.csv`  
+- `features_one_hot.csv`  
+- `my_data1.db` — SQLite database used for SQL EDA
 
-## GIF Visuals
-
-**Falcon 9 launch**
-
-![Falcon 9 launch](spacex_project/images/tenor2.gif)
-
-**Falcon 9 landing**
-
-![Falcon 9 landing](spacex_project/images/tenor1.gif)
-
-**Crash demo (classification contrast)**
-
-![Crash](spacex_project/images/crash.gif)
+Raw data is fetched automatically from IBM Skills Network URLs in the notebooks.
 
 ---
 
-## Engineering Layer
+# Reports
 
-Extensions beyond the Coursera Capstone.
+Located in `reports/`:
 
-### engineering/java/
-Utilities, experimental tools, future CLI concepts.
-
-### engineering/monitoring/
-Ideas for runtime monitoring of training workloads  
-(e.g., preventing kernel crashes on weak hardware).
-
-### engineering/pipelines/
-Skeletons for ETL flows, data ingestion, automation.
+- `ds-capstone-template-coursera.pptx` — Coursera-provided template  
+- `spacex_capstone_presentation.pdf` — final submission-ready report (once exported)
 
 ---
 
-## Environment
+# Engineering Layer
 
-Install requirements:
+Additional engineering modules expanding the project beyond the Coursera scope.
 
-```
+### **[engineering/java/](engineering/java/)**  
+Java-based experiments, utilities, data processing prototypes, integration tooling.
+
+### **[engineering/monitoring/](engineering/monitoring/)**  
+System monitoring concepts including:  
+resource load tracking, automated throttling during ML training,  
+early implementations inspired by the “Gorgon System”.
+
+### **[engineering/pipelines/](engineering/pipelines/)**  
+DevOps/MLOps drafts:  
+scheduled data ingestion, ETL ideas, notebook → production transformations,  
+early retraining pipeline concepts.
+
+---
+
+# Environment
+
+Install all dependencies:
+
 pip install -r requirements.txt
-```
+
+
+A full list of packages is stored in **requirements.txt** in the project root.
 
 ---
 
-## License
+# License
 
 This project is licensed under the **Apache License 2.0**.  
-See: LICENSE
+See the `LICENSE` file for details.
 
 ---
 
-## Acknowledgements
+# Acknowledgements
 
-This repository is the Capstone Project for the  
-**IBM Data Science Professional Certificate (Coursera)**.
+Based on the **IBM Data Science Professional Certificate – Capstone Project** (Coursera).  
+SpaceX® is a trademark of Space Exploration Technologies Corp.  
+This work is for educational purposes only and is not affiliated with SpaceX.
 
-The project is purely educational and **not affiliated with SpaceX**.  
-SpaceX® is a trademark of Space Exploration Technologies Corp.
+---
+
+<p align="center">
+  <![Falcon 9 crash](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0701EN-SkillsNetwork/api/Images/crash.gif)
+>
+</p>
+
+<p align="center">
+  <i>“The goal was simple: predict this outcome.”</i>
+</p>

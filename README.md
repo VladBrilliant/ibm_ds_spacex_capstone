@@ -1,18 +1,17 @@
-<h1 align="center">SpaceX Falcon 9 Data Science Project</h1>
-
-This repository contains the complete SpaceX Falcon 9 analysis, visualizations, and machine learning workflow.
-The project includes the original analytical work (data collection, web scraping, wrangling, SQL EDA, visualization, modeling) 
-and an extended engineering layer (pipelines, monitoring systems, and Java-based tools).
+# SpaceX Falcon 9 Data Science Project
 
 <p align="center">
-  <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0701EN-SkillsNetwork/api/Images/landing_1.gif" alt="Falcon 9 landing">
+  <img src="https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/images/tenor2.gif?raw=1" width="48%">
+  <img src="https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/images/tenor1.gif?raw=1" width="48%">
 </p>
+
+This repository contains the complete SpaceX Falcon 9 analysis, visualizations, and machine learning workflow.
 
 ---
 
-# Table of Contents
+## 📘 Table of Contents
 - [Project Structure](#project-structure)
-- [Notebooks](#notebooks)
+- [Notebooks (Clickable Links)](#notebooks-clickable-links)
 - [Data Files](#data-files)
 - [Reports](#reports)
 - [Engineering Layer](#engineering-layer)
@@ -22,79 +21,75 @@ and an extended engineering layer (pipelines, monitoring systems, and Java-based
 
 ---
 
-# Project Structure
-
+## 📂 Project Structure
 ```
 spacex_project/
-├── notebooks/           # Jupyter notebooks (API, scraping, EDA, SQL, ML)
-├── reports/             # Presentation (PDF, PPTX)
-├── engineering/         # Extended engineering modules
-│   ├── java/            # Java utilities and integrations
-│   ├── monitoring/      # Monitoring concepts & load-control ideas
-│   └── pipelines/       # Early MLOps/DevOps pipeline drafts
+├── notebooks/
+├── reports/
+├── engineering/
+│   ├── java/
+│   ├── monitoring/
+│   └── pipelines/
 └── README.md
 ```
 
 ---
 
-# Notebooks
+## 📒 Notebooks (Clickable Links)
 
-### Data acquisition
-- **jupyter-labs-spacex-data-collection-api.ipynb** — Collects launch data from the SpaceX REST API.
-- **jupyter-labs-webscraping.ipynb** — Scrapes additional Falcon 9 launch information from Wikipedia.
+### 🔹 Data Acquisition
+- [jupyter-labs-spacex-data-collection-api.ipynb](https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/notebooks/jupyter-labs-spacex-data-collection-api.ipynb)
+- [jupyter-labs-webscraping.ipynb](https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/notebooks/jupyter-labs-webscraping.ipynb)
 
-### Wrangling & preprocessing
-- **labs-jupyter-spacex-Data wrangling.ipynb** — Cleaning, transforming datasets, feature engineering.
+### 🔹 Data Wrangling & Preprocessing
+- [labs-jupyter-spacex-Data wrangling.ipynb](https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/notebooks/labs-jupyter-spacex-Data%20wrangling.ipynb)
 
-### SQL-based EDA
-- **jupyter-labs-eda-sql-coursera_sqllite.ipynb** — Exploratory SQL analysis on SQLite database.
+### 🔹 SQL EDA
+- [jupyter-labs-eda-sql-coursera_sqllite.ipynb](https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/notebooks/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
 
-### Visualization EDA
-- **edadataviz.ipynb** — Seaborn/Matplotlib visual analysis.
+### 🔹 Visualization EDA
+- [edadataviz.ipynb](https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/notebooks/edadataviz.ipynb)
 
-### Launch site mapping
-- **lab_jupyter_launch_site_location.ipynb** — Folium interactive maps.
+### 🔹 Launch Site Mapping
+- [lab_jupyter_launch_site_location.ipynb](https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/notebooks/lab_jupyter_launch_site_location.ipynb)
 
-### Machine learning prediction
-- **SpaceX_Machine Learning Prediction_Part_5.ipynb** — ML workflow (LogReg, SVM, DT, KNN).
+### 🔹 Machine Learning Prediction
+- [SpaceX_Machine Learning Prediction_Part_5.ipynb](https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/notebooks/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
 
 ---
 
-# Data Files
-
-Located in `notebooks/`:
-
-- dataset_part_1.csv  
-- dataset_part_3.csv  
+## 📊 Data Files
+Located under `spacex_project/notebooks/`:
+- dataset_part_1.csv
+- dataset_part_3.csv
 - spacex_web_scraped.csv  
 - features_one_hot.csv  
-- my_data1.db — SQLite database
+- my_data1.db
 
 ---
 
-# Reports
-
-Located in `reports/`:
-
+## 📑 Reports
+Stored in `spacex_project/reports/`:
 - ds-capstone-template-coursera.pptx  
-- spacex_capstone_presentation.pdf  
+- spacex_capstone_presentation.pdf (final submission)
 
 ---
 
-# Engineering Layer
+## 🛠 Engineering Layer
 
-### engineering/java/
-Java-based processing utilities.
+### `engineering/java/`
+Java utilities and helper scripts.
 
-### engineering/monitoring/
-Concepts for system monitoring & load-control tools.
+### `engineering/monitoring/`
+System load monitoring concepts, crash-prevention ideas during ML training.
 
-### engineering/pipelines/
-Early drafts of DevOps/MLOps workflows.
+### `engineering/pipelines/`
+Early DevOps/MLOps data pipeline concepts.
 
 ---
 
-# Environment
+## ⚙ Environment
+Install dependencies:
 
 ```
 pip install -r requirements.txt
@@ -102,21 +97,19 @@ pip install -r requirements.txt
 
 ---
 
-# License
-
-Apache License 2.0 — see LICENSE file.
+## 📄 License
+Apache License 2.0 — see `LICENSE`.
 
 ---
 
-# Acknowledgements
+## 🙌 Acknowledgements
+Based on IBM Data Science Professional Certificate (Coursera).  
+SpaceX® is a trademark of SpaceX Corp.
 
-Based on IBM Data Science Professional Certificate (Coursera).
-Not affiliated with SpaceX.
-
-<p align="center">
-  <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0701EN-SkillsNetwork/api/Images/crash.gif" alt="Falcon 9 crash">
-</p>
+---
 
 <p align="center">
-  <i>“The goal was simple: predict this outcome.”</i>
+  <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-DS0701EN-SkillsNetwork/api/Images/crash.gif">
 </p>
+
+<p align="center"><i>"The goal was simple: predict this outcome."</i></p>

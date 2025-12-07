@@ -1,8 +1,8 @@
 # SpaceX Falcon 9 Data Science Project
 
 <p align="center">
-  <img src="https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/images/tenor2.gif?raw=1" width="48%">
-  <img src="https://github.com/VladBrilliant/ibm_ds_spacex_capstone/blob/main/spacex_project/images/tenor1.gif?raw=1" width="48%">
+  <img src="images/tenor2.gif" width="48%">
+  <img src="images/tenor1.gif" width="48%">
 </p>
 
 This repository contains the complete SpaceX Falcon 9 analysis, visualizations, and machine learning workflow for the Falcon 9 first stage landing prediction capstone.
@@ -25,15 +25,25 @@ This repository contains the complete SpaceX Falcon 9 analysis, visualizations, 
 ## Project Structure
 
 ```
-spacex_project/
+ibm_ds_spacex_capstone/
+│   .gitignore
+│   LICENSE
+│   README.md
+│   requirements.txt
+│
 ├── notebooks/
-├── reports/
-├── engineering/
-│   ├── java/
-│   ├── monitoring/
-│   └── pipelines/
-├── images/              # GIF animations used in README
-└── README.md
+│
+├── data/
+│   └── processed/
+│
+├── images/              # GIF animations and static images used in README and report
+│
+├── reports/             # Final PPTX / PDF reports (to be added)
+│
+└── engineering/
+    ├── java/
+    ├── monitoring/
+    └── pipelines/
 ```
 
 ---
@@ -41,59 +51,67 @@ spacex_project/
 ## Notebooks
 
 ### Data Acquisition
-- [jupyter-labs-spacex-data-collection-api.ipynb](spacex_project/notebooks/jupyter-labs-spacex-data-collection-api.ipynb)
-- [jupyter-labs-webscraping.ipynb](spacex_project/notebooks/jupyter-labs-webscraping.ipynb)
+- notebooks/jupyter-labs-spacex-data-collection-api.ipynb
+- notebooks/jupyter-labs-webscraping.ipynb
 
 ### Data Wrangling & Preprocessing
-- [labs-jupyter-spacex-Data wrangling.ipynb](spacex_project/notebooks/labs-jupyter-spacex-Data%20wrangling.ipynb)
+- notebooks/labs-jupyter-spacex-Data wrangling.ipynb
 
 ### SQL EDA
-- [jupyter-labs-eda-sql-coursera_sqllite.ipynb](spacex_project/notebooks/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
+- notebooks/jupyter-labs-eda-sql-coursera_sqllite.ipynb
 
 ### Visualization EDA
-- [edadataviz.ipynb](spacex_project/notebooks/edadataviz.ipynb)
+- notebooks/edadataviz.ipynb
 
 ### Launch Site Mapping
-- [lab_jupyter_launch_site_location.ipynb](spacex_project/notebooks/lab_jupyter_launch_site_location.ipynb)
+- notebooks/lab_jupyter_launch_site_location.ipynb
 
 ### Machine Learning Prediction
-- [SpaceX_Machine Learning Prediction_Part_5.ipynb](spacex_project/notebooks/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
+- notebooks/SpaceX Machine Learning Prediction_Part_5.ipynb
 
 ---
 
 ## Dashboard Screenshot
 
 <p align="center">
-  <img src="spacex_project/images/spacex_dash.png" width="700">
+  <img src="images/spacex_dash.png" width="700">
 </p>
 
 ---
 
 ## Data Files
 
-Located under `spacex_project/notebooks/`:
+Located under `notebooks/`:
 
-- [dataset_part_1.csv](spacex_project/notebooks/dataset_part_1.csv)
-- [dataset_part__3.csv](spacex_project/notebooks/dataset_part__3.csv)
-- [spacex_web_scraped.csv](spacex_project/notebooks/spacex_web_scraped.csv)
-- [features_one_hot.csv](spacex_project/notebooks/features_one_hot.csv)
-- [my_data1.db](spacex_project/notebooks/my_data1.db)
+- notebooks/dataset_part_1.csv
+- notebooks/dataset_part__3.csv
+- notebooks/spacex_web_scraped.csv
+- notebooks/features_one_hot.csv
+- notebooks/my_data1.db
+
+These files are intermediate artifacts produced during the labs (data collection, scraping, wrangling and feature engineering).
 
 ---
 
 ## Reports
 
-Stored in `spacex_project/reports/`:
+Stored in `reports/` (when added):
 
 - ds-capstone-template-coursera.pptx
-- spacex_capstone_presentation.pdf (if added)
+- spacex_capstone_presentation.pdf (if exported)
+
+**How to download report files from GitHub:**
+
+1. Open the file in the `reports/` folder (click on its name in GitHub).
+2. Click the “Download raw” button,  
+   or right‑click the link and select **“Save link as…”**.
 
 ---
 
 ## Engineering Layer
 
 ### engineering/java/
-Java utilities and helper scripts (future extensions).
+Java utilities and helper scripts (future extensions, e.g. Java-based ML or monitoring prototypes).
 
 ### engineering/monitoring/
 Concepts and drafts for monitoring system load and preventing crashes during model training on limited hardware.
@@ -107,15 +125,17 @@ Early DevOps/MLOps pipeline ideas: data ingestion, ETL, and notebook-to-producti
 
 Install dependencies:
 
-```
+```bash
 pip install -r requirements.txt
 ```
+
+You can then open the notebooks from the `notebooks/` directory using Jupyter, JupyterLab or VS Code.
 
 ---
 
 ## License
 
-This project is licensed under the **Apache License 2.0** — see LICENSE.
+This project is licensed under the **Apache License 2.0** — see [LICENSE](LICENSE).
 
 ---
 
@@ -129,7 +149,7 @@ SpaceX® is a trademark of Space Exploration Technologies Corp.
 ---
 
 <p align="center">
-  <img src="spacex_project/images/crash.gif" width="450">
+  <img src="images/crash.gif" width="450">
 </p>
 
 <p align="center"><i>"The goal was simple: predict this outcome."</i></p>

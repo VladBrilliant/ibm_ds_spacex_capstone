@@ -83,9 +83,10 @@ ibm_ds_spacex_capstone/
 1. Install dependencies:
    ```bash
    pip install -r requirements.txt
+   
 2. Run the dashboard:
-
-python engineering/pipelines/dashboard/app.py
+   ```bash
+   python engineering/pipelines/dashboard/app.py
 
 
 3. Open in browser:

@@ -78,6 +78,21 @@ ibm_ds_spacex_capstone/
 </p>
 
 ---
+## Run Dashboard (Dash)
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+2. Run the dashboard:
+
+python engineering/pipelines/dashboard/app.py
+
+
+3. Open in browser:
+
+http://127.0.0.1:8050/
+
+---
 
 ## Data Files
 

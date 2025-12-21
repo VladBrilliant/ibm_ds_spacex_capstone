@@ -9,3 +9,6 @@ plotly
 dash
 requests
 beautifulsoup4
+dash>=3
+plotly>=5
+

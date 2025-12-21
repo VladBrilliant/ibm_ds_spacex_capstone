@@ -79,6 +79,9 @@ ibm_ds_spacex_capstone/
 
 ---
 ## Run Dashboard (Dash)
+> The dashboard is a local Dash application.
+> To run it, clone this repository to your machine and execute the commands below from the project root directory.
+
 
 1. Install dependencies:
    ```bash
@@ -91,7 +94,7 @@ ibm_ds_spacex_capstone/
 
 3. Open in browser:
 
-http://127.0.0.1:8050/
+   http://127.0.0.1:8050/
 
 ---
 
@@ -104,8 +107,22 @@ Located under `notebooks/`:
 - notebooks/spacex_web_scraped.csv
 - notebooks/features_one_hot.csv
 - notebooks/my_data1.db
+- spacex_launch_dash.csv
 
 These files are intermediate artifacts produced during the labs (data collection, scraping, wrangling and feature engineering).
+
+### Data Organization Note
+
+For Coursera autograding compatibility, all datasets used in the notebooks
+are stored directly in the `notebooks/` directory.
+
+For better project organization and engineering workflows (e.g., dashboard
+and pipelines), copies of generated datasets may also appear under:
+
+- `data/processed/`
+
+These files are synchronized from `notebooks/` and are not used by the
+autograding system.
 
 ---
 

@@ -110,14 +110,20 @@ Stored in `reports/` (when added):
 
 ## Engineering Layer
 
-### engineering/java/
-Java utilities and helper scripts (future extensions, e.g. Java-based ML or monitoring prototypes).
+The **Engineering Layer** contains experimental and forward‑looking engineering
+extensions built on top of the core Data Science work.
 
-### engineering/monitoring/
-Concepts and drafts for monitoring system load and preventing crashes during model training on limited hardware.
+- **[`engineering/`](engineering/ENGINEERING.md)**  
+  Entry point for the engineering layer, design principles, and architecture overview.
 
-### engineering/pipelines/
-Early DevOps/MLOps pipeline ideas: data ingestion, ETL, and notebook-to-production transformations.
+- **[`engineering/java/`](engineering/java/README.md)**  
+  Java utilities and helper scripts (future extensions, e.g. Java-based ML or monitoring prototypes).
+
+- **[`engineering/monitoring/`](engineering/monitoring/README.md)**  
+  Concepts and drafts for monitoring system load and preventing crashes during model training on limited hardware.
+
+- **[`engineering/pipelines/`](engineering/pipelines/README.md)**  
+  Early DevOps/MLOps pipeline ideas: data ingestion, ETL, and notebook-to-production transformations.
 
 ---
 

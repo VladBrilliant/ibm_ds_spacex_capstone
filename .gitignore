@@ -19,3 +19,8 @@ spacex_project/data/raw/
 
 # Logs
 *.log
+
+# -------------------------------------------------------------------
+# Processed artifacts (generated locally; keep folder via placeholder)
+data/processed/*
+!data/processed/.placeholder
